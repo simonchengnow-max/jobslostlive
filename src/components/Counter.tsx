@@ -20,7 +20,7 @@ export default function Counter() {
 
   return (
     <div className="text-center py-16 px-4 border-b border-slate-800">
-      <p className="stat-label mb-3">US Jobs Lost to AI — 2025 YTD (Confirmed)</p>
+      <p className="stat-label mb-3">Estimated US Jobs Lost to AI — 2025 YTD</p>
       <div className="ticker-num text-6xl md:text-8xl font-bold text-sky-400 tabular-nums tracking-tight">
         {count.toLocaleString()}
       </div>
