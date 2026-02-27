@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-mono: 'Courier New', monospace;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.chart-card {
+  @apply bg-slate-900 border border-slate-800 rounded-xl p-6;
+}
+
+.stat-label {
+  @apply text-xs uppercase tracking-widest text-slate-400 font-semibold;
+}
+
+.ticker-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
