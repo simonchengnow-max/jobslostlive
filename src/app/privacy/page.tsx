@@ -1,0 +1,27 @@
+export default function PrivacyPolicy() {
+  return (
+    <main className="min-h-screen bg-[#0a0f1e] text-slate-300 px-4 md:px-8 py-16 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold text-white mb-2">Privacy Policy</h1>
+      <p className="text-slate-500 text-sm mb-10">Effective Date: [Insert Date] &nbsp;|&nbsp; Website: https://www.jobslostlive.com</p>
+      <section className="space-y-10 text-sm leading-relaxed">
+        <div><h2 className="text-lg font-semibold text-white mb-2">1. Introduction</h2><p>JobsLostLive respects your privacy and is committed to protecting your personal information. By accessing or using JobsLostLive, you consent to the practices described in this Privacy Policy.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">2. Information We Collect</h2><h3 className="font-semibold text-slate-200 mt-4 mb-1">2.1 Information You Provide</h3><p>When you submit stories or comments, we collect the text and any optional display name. We do not require user accounts.</p><h3 className="font-semibold text-slate-200 mt-4 mb-1">2.2 Information Collected Automatically</h3><ul className="list-disc list-inside mt-2 space-y-1 text-slate-400"><li>IP address</li><li>Browser type and version</li><li>Device type and operating system</li><li>Pages viewed, time on page, referring URL</li><li>Date and time of visits</li></ul><h3 className="font-semibold text-slate-200 mt-4 mb-1">2.3 Cookies and Analytics</h3><p>We use analytics tools such as Google Analytics to understand site usage. We do not use advertising cookies or cross-site tracking for marketing.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">3. How We Use Your Information</h2><ul className="list-disc list-inside space-y-1 text-slate-400"><li>To operate, maintain, and improve JobsLostLive.</li><li>To display user-submitted stories and comments.</li><li>To monitor performance through analytics.</li><li>To respond to inquiries and takedown requests.</li><li>To enforce our Terms of Use.</li><li>To comply with legal obligations.</li></ul></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">4. Cookies and Your Choices</h2><p>We use essential and analytics cookies. You can control cookies through your browser settings. To opt out of Google Analytics, use the <a href="https://tools.google.com/dlpage/gaoptout" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">5. How We Share Information</h2><p><strong className="text-slate-200">Public Content:</strong> Submitted stories are displayed publicly.</p><p className="mt-2"><strong className="text-slate-200">Service Providers:</strong> We share data with providers for hosting, analytics, and security.</p><p className="mt-2"><strong className="text-slate-200">Legal Requirements:</strong> We may disclose information if required by law.</p><p className="mt-2"><strong className="text-slate-200">Business Transfers:</strong> Data may transfer as part of a merger or acquisition.</p><p className="mt-2">We do not sell your personal information.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">6. Data Retention</h2><p>We retain information as long as necessary. User-submitted content may be retained indefinitely unless a valid deletion request is received.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">7. Your Rights and Choices</h2><p>Under Alberta PIPA and Canada&apos;s PIPEDA, you may have rights to access, correct, or delete your personal information. Contact us at <a href="mailto:simon@realcapitolhill.com" className="text-blue-400 hover:underline">simon@realcapitolhill.com</a>.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">8. Security</h2><p>We implement reasonable measures to protect your information. No transmission over the internet is completely secure.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">9. Children&apos;s Privacy</h2><p>JobsLostLive is not directed to individuals under 18. If you believe we have collected information from a child, contact us immediately.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">10. International Users</h2><p>JobsLostLive is operated from Canada. By using the website, you consent to your information being processed in Canada.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">11. Third-Party Websites</h2><p>We are not responsible for the privacy practices of third-party sites linked from JobsLostLive.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">12. Changes to This Policy</h2><p>We may update this Privacy Policy at any time. Continued use after changes constitutes acceptance.</p></div>
+        <div><h2 className="text-lg font-semibold text-white mb-2">13. Contact Us</h2><p>Email: <a href="mailto:simon@realcapitolhill.com" className="text-blue-400 hover:underline">simon@realcapitolhill.com</a><br />Address: [Insert business or mailing address in Calgary, Alberta, Canada]</p></div>
+      </section>
+      <div className="mt-16 pt-8 border-t border-slate-800 text-xs text-slate-600 flex gap-6">
+        <a href="/" className="hover:text-slate-400">Home</a>
+        <a href="/terms" className="hover:text-slate-400">Terms of Use</a>
+      </div>
+    </main>
+  );
+}
