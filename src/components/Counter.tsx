@@ -34,7 +34,7 @@ export default function Counter() {
           <div className="stat-label mt-1">Total US Employed</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold text-amber-400">4.1%</div>
+          <div className="text-2xl font-bold text-yellow-400">4.1%</div>
           <div className="stat-label mt-1">Unemployment Rate</div>
         </div>
         <div className="text-center">
