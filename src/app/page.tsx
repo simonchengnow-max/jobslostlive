@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
 
-      {/* Header */}
+      {/* ── Header ── */}
       <header className="border-b border-slate-800 px-6 py-4 flex items-center justify-between">
         <div>
           <span className="text-lg font-bold tracking-tight text-white">JobsLost<span className="text-sky-400">Live</span></span>
@@ -30,14 +30,15 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Counter */}
+      {/* ── Hero Counter ── */}
       <Counter />
 
-      {/* Charts Grid */}
+      {/* ── Charts Grid ── */}
       <section className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
         <h2 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6">
           US Labor Market — Full Picture
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <EmploymentTrendChart />
           <AILayoffsChart />
@@ -50,10 +51,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* References */}
+
+      {/* ── References ── */}
       <section className="px-4 md:px-8 py-8 max-w-7xl mx-auto border-t border-slate-800">
         <h2 className="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-4">
-          Data Sources &amp; References
+          Data Sources & References
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {references.map((ref, i) => (
@@ -65,13 +67,13 @@ export default function Home() {
               className="flex items-start gap-2 p-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-700 transition-colors group"
             >
               <span className="text-sky-600 group-hover:text-sky-400 mt-0.5 text-xs">&#8599;</span>
-              <span className="text-xs text-slate-400 group-hover:text-slate-200 transition-colors leading-relaxed">{ref.label}</span>
+              <span className="text-xs text-slate-400 group-hover:text-slate-200 transition-colors leading-relaxed">{ref.title}</span>
             </a>
           ))}
         </div>
       </section>
 
-      {/* Footer */}
+      {/* ── Footer ── */}
       <footer className="px-4 md:px-8 py-8 border-t border-slate-800 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs uppercase tracking-widest text-slate-600 font-semibold mb-3">Disclaimer</p>
