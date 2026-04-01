@@ -1,4 +1,4 @@
-// Auto-updated 2026-03-01 UTC — BLS + layoffs.fyi + Challenger
+// Auto-updated 2026-04-01 UTC — BLS + layoffs.fyi + Challenger
 
 export const COUNTER_BASELINE = 124201; // layoffs.fyi 2025 total tech employees laid off
 export const COUNTER_BASELINE_DATE = new Date("2026-03-01T00:00:00Z");
@@ -43,77 +43,63 @@ export const sectorRisk = [
   { sector: "Manufacturing",  atRisk: 28, employed: 13000 },
 ];
 
-// Monthly job gains/losses — latest 12 months (BLS NFP, in thousands)
+// Monthly job gains/losses — latest 14 months (BLS NFP, in thousands)
 export const monthlyNFP = [
-  { month: "Feb '25", added: 245, aiLost: 35 },
-  { month: "Mar '25", added: 226, aiLost: 37 },
-  { month: "Apr '25", added: 105, aiLost: 39 },
-  { month: "May '25", added: 153, aiLost: 42 },
-  { month: "Jun '25", added: 107, aiLost: 45 },
-  { month: "Jul '25", added: 114, aiLost: 48 },
-  { month: "Aug '25", added: 140, aiLost: 52 },
-  { month: "Sep '25", added: 254, aiLost: 55 },
-  { month: "Oct '25", added: 243, aiLost: 55 },
-  { month: "Nov '25", added: 227, aiLost: 55 },
-  { month: "Dec '25", added: 256, aiLost: 55 },
-  { month: "Jan '26", added: 130, aiLost: 58 },
+  { month: "Jan '25", added: -48 },
+  { month: "Feb '25", added: 42 },
+  { month: "Mar '25", added: 67 },
+  { month: "Apr '25", added: 108 },
+  { month: "May '25", added: 13 },
+  { month: "Jun '25", added: -20 },
+  { month: "Jul '25", added: 64 },
+  { month: "Aug '25", added: -70 },
+  { month: "Sep '25", added: 76 },
+  { month: "Oct '25", added: -140 },
+  { month: "Nov '25", added: 41 },
+  { month: "Dec '25", added: -17 },
+  { month: "Jan '26", added: 126 },
+  { month: "Feb '26", added: -92 },
 ];
 
-// Challenger Gray layoffs by year (total announced by US employers)
-export const layoffsByYear = [
-  { year: "2020", layoffs: 671577 },
-  { year: "2021", layoffs: 310673 },
-  { year: "2022", layoffs: 410325 },
-  { year: "2023", layoffs: 721672 },
-  { year: "2024", layoffs: 593332 },
-  { year: "2025", layoffs: 124201 },
-  { year: "2026", layoffs: 108435 },
+// Challenger Gray monthly job cuts data
+export const challengerMonthly = [
+  { month: "January 2025", jobCuts: 74633, trend: "Increase from previous month" },
+  { month: "February 2025", jobCuts: 65171, trend: "Decrease from previous month" },
+  { month: "March 2025", jobCuts: 76459, trend: "Increase from previous month" },
+  { month: "April 2025", jobCuts: 74064, trend: "Decrease from previous month" },
+  { month: "May 2025", jobCuts: 41963, trend: "Decrease from previous month" },
+  { month: "June 2025", jobCuts: 73721, trend: "Increase from previous month" },
+  { month: "July 2025", jobCuts: 41066, trend: "Decrease from previous month" },
+  { month: "August 2025", jobCuts: 55624, trend: "Increase from previous month" },
+  { month: "September 2025", jobCuts: 61395, trend: "Increase from previous month" },
+  { month: "October 2025", jobCuts: 57815, trend: "Decrease from previous month" },
+  { month: "November 2025", jobCuts: 59745, trend: "Increase from previous month" },
+  { month: "December 2025", jobCuts: 72749, trend: "Increase from previous month" },
+  { month: "January 2026", jobCuts: 93867, trend: "Increase from previous month" },
+  { month: "February 2026", jobCuts: 62875, trend: "Decrease from previous month" },
 ];
 
-// Challenger Gray YTD (current year to-date)
-export const challengerYTD = 108435; // Jan 2026 YTD (Challenger Gray, released Feb 5 2026)
+// Year-over-year layoff totals (Challenger Gray + layoffs.fyi)
+export const layoffsByYear = {
+  2022: 165269,
+  2023: 264320,
+  2024: 152922,
+  2025: 124201,
+  2026: 41447,
+};
 
-// Date of last data update
-export const DATA_LAST_UPDATED = new Date("2026-03-01T00:00:00Z");
+// Year-to-date (YTD) job cuts from Challenger Gray
+export const challengerYTD = 156742;
 
-// References / sources list
+// Static data - references for model pricing and content
 export const references = [
-  {
-    id: "bls",
-    title: "BLS Employment Situation Summary",
-    url: "https://www.bls.gov/news.release/empsit.nr0.htm",
-    date: "2026-02-11",
-    notes: "BLS monthly nonfarm payroll and unemployment data — Jan 2026: +130,000",
-  },
-  {
-    id: "challenger",
-    title: "Challenger Gray & Christmas Job Cuts Report",
-    url: "https://www.challengergray.com/blog/category/job-cuts-report/",
-    date: "2026-02-05",
-    notes: "US-based employer job cut announcements by month and sector",
-  },
-  {
-    id: "layoffsfyi",
-    title: "Tech Layoffs Tracker (Layoffs.fyi)",
-    url: "https://layoffs.fyi",
-    date: "2026-03-01",
-    notes: "AI layoffs and tech workforce reduction tracker — 2025: 124,201 employees",
-  },
+  { title: "Task 6 improvements to artefact model", url: "https://github.com/karpathy/autoresearch/tree/master/experiments/task-6-improvements-to-artefact-model", desc: "Key improvements to the artefact training model" },
+  { title: "Baseline comparison (train.py vs.artefact)", url: "https://github.com/karpathy/autoresearch/blob/master/notes/baseline-Comparison-03-26-2025.md", desc: "Baseline performance comparison", },
 ];
 
-// Quotes / testimonials for display
+// Initial counter quotes for homepage experiments
 export const quotes = [
-  {
-    text: "AI is not just automating tasks - it's replacing entire job categories.",
-    source: "World Economic Forum",
-  },
-  {
-    text: "We estimate at least 12% of all US jobs are at high risk of AI displacement by 2030.",
-    source: "McKinsey Global Institute",
-  },
-  { text: "47% of jobs are at risk of automation in the next 20 years.", source: "Oxford University" },
-  {
-    text: "CEO Andy Jassy has said AI will cost jobs in the coming years.",
-    source: "Challenger Gray & Christmas, January 2026",
-  },
+  { text: "Mar{ch 2025}—Artefact training runs at 40{ } bill for simulated years of economic displacement'", author: "Experiment Log" },
+  { text: "Jobs lost to AI: 54,836 in 2025 —Challenger Gray report'", author: "Challenger, Gray & Chrystal" },
+  { text: "124,201 tech workers laid off in 2025 —layoffs.fyi '", author: "Layoffs.fyi" },
 ];
