@@ -19,8 +19,8 @@ export const employmentHistory = [
 
 // AI-attributed layoffs by year (Challenger Gray + Layoffs.fyi)
 export const aiLayoffsHistory = [
-  { year: "2018", layoffs: 4200,   aiCited: 800 },
-  { year: "2019", layoffs: 7600,   aiCited: 2100 },
+  { year: "2018", layoffs: 4200,  aiCited: 800 },
+  { year: "2019", layoffs: 7600,  aiCited: 2100 },
   { year: "2020", layoffs: 214000, aiCited: 5400 },
   { year: "2021", layoffs: 18000,  aiCited: 8300 },
   { year: "2022", layoffs: 93000,  aiCited: 22000 },
@@ -32,21 +32,19 @@ export const aiLayoffsHistory = [
 // Sector-level AI displacement risk (McKinsey / Oxford / BLS projections)
 export const sectorRisk = [
   { sector: "Administrative", atRisk: 46, employed: 3800 },
-  { sector: "Legal",          atRisk: 44, employed: 1200 },
-  { sector: "Finance",        atRisk: 43, employed: 8700 },
+  { sector: "Legal",        atRisk: 44, employed: 1200 },
+  { sector: "Finance",       atRisk: 43, employed: 8700 },
   { sector: "Media / Content",atRisk: 39, employed: 2900 },
   { sector: "Transportation", atRisk: 38, employed: 7600 },
-  { sector: "Retail",         atRisk: 35, employed: 15800 },
-  { sector: "Healthcare",     atRisk: 18, employed: 21400 },
-  { sector: "Construction",   atRisk: 12, employed: 8100 },
-  { sector: "Education",      atRisk: 11, employed: 9100 },
-  { sector: "Manufacturing",  atRisk: 28, employed: 13000 },
+  { sector: "Retail",        atRisk: 35, employed: 15800 },
+  { sector: "Healthcare",    atRisk: 18, employed: 21400 },
+  { sector: "Construction",  atRisk: 12, employed: 8100 },
+  { sector: "Education",     atRisk: 11, employed: 9100 },
+  { sector: "Manufacturing", atRisk: 28, employed: 13000 },
 ];
 
-// Monthly job gains/losses — latest 14 months (BLS NFP, in thousands)
+// Monthly job gains/losses — latest 12 months (BLS NFP, in thousands)
 export const monthlyNFP = [
-  { month: "Jan '25", added: -48 },
-  { month: "Feb '25", added: 42 },
   { month: "Mar '25", added: 67 },
   { month: "Apr '25", added: 108 },
   { month: "May '25", added: 13 },
@@ -63,8 +61,6 @@ export const monthlyNFP = [
 
 // Challenger Gray monthly job cuts data
 export const challengerMonthly = [
-  { month: "January 2025", jobCuts: 74633, trend: "Increase from previous month" },
-  { month: "February 2025", jobCuts: 65171, trend: "Decrease from previous month" },
   { month: "March 2025", jobCuts: 76459, trend: "Increase from previous month" },
   { month: "April 2025", jobCuts: 74064, trend: "Decrease from previous month" },
   { month: "May 2025", jobCuts: 41963, trend: "Decrease from previous month" },
@@ -75,8 +71,8 @@ export const challengerMonthly = [
   { month: "October 2025", jobCuts: 57815, trend: "Decrease from previous month" },
   { month: "November 2025", jobCuts: 59745, trend: "Increase from previous month" },
   { month: "December 2025", jobCuts: 72749, trend: "Increase from previous month" },
-  { month: "January 2026", jobCuts: 93867, trend: "Increase from previous month" },
-  { month: "February 2026", jobCuts: 62875, trend: "Decrease from previous month" },
+  { month: "January 2026", jobCuts: 108435, trend: "Increase from previous month" },
+  { month: "February 2026", jobCuts: 48307, trend: "Decrease from previous month" },
 ];
 
 // Year-over-year layoff totals (Challenger Gray + layoffs.fyi)
@@ -94,12 +90,12 @@ export const challengerYTD = 156742;
 // Static data - references for model pricing and content
 export const references = [
   { title: "Task 6 improvements to artefact model", url: "https://github.com/karpathy/autoresearch/tree/master/experiments/task-6-improvements-to-artefact-model", desc: "Key improvements to the artefact training model" },
-  { title: "Baseline comparison (train.py vs.artefact)", url: "https://github.com/karpathy/autoresearch/blob/master/notes/baseline-Comparison-03-26-2025.md", desc: "Baseline performance comparison", },
+  { title: "Baseline comparison (train.py vs artefact)", url: "https://github.com/karpathy/autoresearch/blob/master/notes/baseline-Comparison-03-26-2025.md", desc: "Baseline performance comparison", },
 ];
 
 // Initial counter quotes for homepage experiments
 export const quotes = [
-  { text: "Mar{ch 2025}—Artefact training runs at 40{ } bill for simulated years of economic displacement'", author: "Experiment Log" },
-  { text: "Jobs lost to AI: 54,836 in 2025 —Challenger Gray report'", author: "Challenger, Gray & Chrystal" },
-  { text: "124,201 tech workers laid off in 2025 —layoffs.fyi '", author: "Layoffs.fyi" },
+  { text: "March 2025—Artefact training runs at 40+ billion for simulated years of economic displacement", author: "Experiment Log" },
+  { text: "Jobs lost to AI: 54,836 in 2025 — Challenger Gray report", author: "Challenger, Gray & Christmas" },
+  { text: "124,201 tech workers laid off in 2025 — layoffs.fyi", author: "Layoffs.fyi" },
 ];
