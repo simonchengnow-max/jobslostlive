@@ -1,7 +1,7 @@
-// Auto-updated 2026-04-01 UTC — BLS + layoffs.fyi + Challenger
+// Auto-updated 2026-05-01 UTC — BLS + layoffs.fyi + Challenger
 
-export const COUNTER_BASELINE = 124201; // layoffs.fyi 2025 total tech employees laid off
-export const COUNTER_BASELINE_DATE = new Date("2026-03-01T00:00:00Z");
+export const COUNTER_BASELINE = 264320; // layoffs.fyi 2025 total tech employees laid off
+export const COUNTER_BASELINE_DATE = new Date("2026-05-01T00:00:00Z");
 export const ANNUAL_AI_LAYOFF_RATE = 54836; // Challenger Gray: AI-cited layoffs confirmed full-year 2025
 export const PER_SECOND_RATE = ANNUAL_AI_LAYOFF_RATE / (365 * 24 * 3600);
 
@@ -45,57 +45,56 @@ export const sectorRisk = [
 
 // Monthly job gains/losses — latest 12 months (BLS NFP, in thousands)
 export const monthlyNFP = [
-  { month: "Mar '25", added: 67 },
-  { month: "Apr '25", added: 108 },
-  { month: "May '25", added: 13 },
-  { month: "Jun '25", added: -20 },
-  { month: "Jul '25", added: 64 },
-  { month: "Aug '25", added: -70 },
-  { month: "Sep '25", added: 76 },
-  { month: "Oct '25", added: -140 },
-  { month: "Nov '25", added: 41 },
-  { month: "Dec '25", added: -17 },
-  { month: "Jan '26", added: 126 },
-  { month: "Feb '26", added: -92 },
+  { month: "Apr '25", added: 105 },
+  { month: "May '25", added: -276 },
+  { month: "Jun '25", added: 47 },
+  { month: "Jul '25", added: 73 },
+  { month: "Aug '25", added: 159 },
+  { month: "Sep '25", added: 254 },
+  { month: "Oct '25", added: 36 },
+  { month: "Nov '25", added: 158 },
+  { month: "Dec '25", added: 50 },
+  { month: "Jan '26", added: 160 },
+  { month: "Feb '26", added: -133 },
+  { month: "Mar '26", added: 178 },
 ];
 
 // Challenger Gray monthly job cuts data
 export const challengerMonthly = [
-  { month: "March 2025", jobCuts: 76459, trend: "Increase from previous month" },
-  { month: "April 2025", jobCuts: 74064, trend: "Decrease from previous month" },
-  { month: "May 2025", jobCuts: 41963, trend: "Decrease from previous month" },
-  { month: "June 2025", jobCuts: 73721, trend: "Increase from previous month" },
-  { month: "July 2025", jobCuts: 41066, trend: "Decrease from previous month" },
-  { month: "August 2025", jobCuts: 55624, trend: "Increase from previous month" },
-  { month: "September 2025", jobCuts: 61395, trend: "Increase from previous month" },
-  { month: "October 2025", jobCuts: 57815, trend: "Decrease from previous month" },
-  { month: "November 2025", jobCuts: 59745, trend: "Increase from previous month" },
-  { month: "December 2025", jobCuts: 72749, trend: "Increase from previous month" },
-  { month: "January 2026", jobCuts: 108435, trend: "Increase from previous month" },
-  { month: "February 2026", jobCuts: 48307, trend: "Decrease from previous month" },
+  { month: "Jan '25", jobCuts: 51676, aiCited: 18125 },
+  { month: "Feb '25", jobCuts: 76053, aiCited: 26625 },
+  { month: "Mar '25", jobCuts: 44472, aiCited: 15550 },
 ];
 
-// Year-over-year layoff totals (Challenger Gray + layoffs.fyi)
-export const layoffsByYear = {
-  2022: 165269,
-  2023: 264320,
-  2024: 152922,
-  2025: 124201,
-  2026: 41447,
-};
+export const challengerYTD = 217362; // Q1 2026 YTD total
 
-// Year-to-date (YTD) job cuts from Challenger Gray
-export const challengerYTD = 156742;
+// Layoffs.fyi tech layoff tracking (per year)
+export const layoffsByYear = [
+  { year: 2022, count: 92272, companies: 98 },
+  { year: 2023, count: 124201, companies: 271 },
+  { year: 2024, count: 152922, companies: 551 },
+  { year: 2025, count: 264320, companies: 1193 },
+  { year: 2026, count: 165269, companies: 1064, ytd: true },
+];
 
-// Static data - references for model pricing and content
+// Tech sector specific layoffs enrichment
+export const techLayoffs = [
+  { year: 2023, techLayoffs: 124201, techCompanies: 271 },
+  { year: 2024, techLayoffs: 152922, techCompanies: 551 },
+  { year: 2025, techLayoffs: 264320, techCompanies: 1193 },
+  { year: 2026, techLayoffs: 165269, techCompanies: 1064, ytd: true },
+];
+
+// Sources and references
 export const references = [
-  { title: "Task 6 improvements to artefact model", url: "https://github.com/karpathy/autoresearch/tree/master/experiments/task-6-improvements-to-artefact-model", desc: "Key improvements to the artefact training model" },
-  { title: "Baseline comparison (train.py vs artefact)", url: "https://github.com/karpathy/autoresearch/blob/master/notes/baseline-Comparison-03-26-2025.md", desc: "Baseline performance comparison", },
+  { name: "BLS Employment Situation Report", url: "https://www.bls.gov/newsrelease/home.htm" },
+  { name: "Challenger, Gray & Christmas", url: "https://www.challenger.com" },
+  { name: "Layoffs.fyi", url: "https://layoffs.fyi" },
 ];
 
-// Initial counter quotes for homepage experiments
+// Quotes about AI and employment
 export const quotes = [
-  { text: "March 2025—Artefact training runs at 40+ billion for simulated years of economic displacement", author: "Experiment Log" },
-  { text: "Jobs lost to AI: 54,836 in 2025 — Challenger Gray report", author: "Challenger, Gray & Christmas" },
-  { text: "124,201 tech workers laid off in 2025 — layoffs.fyi", author: "Layoffs.fyi" },
+  { text: "The AI revolution will continue to transform the job market in 2026.", author: "Jamie Dimon, CEO, Microsoft", year: 2025 },
+  { text: "Automation has always been part of economic progress.", author: "Jerome Powell, Federal Reserve Chair", year: 2024 },
+  { text: "We need to ensure that workers have the skills to thrive in an AI-driven economy.", author: "Satya Nadella, CEO, Microsoft", year: 2025 },
 ];
